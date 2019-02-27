@@ -31,17 +31,17 @@ Partial Class product
         Me.Label7 = New System.Windows.Forms.Label()
         Me.datagrid_product = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbo_brand = New System.Windows.Forms.ComboBox()
         Me.cbo_category = New System.Windows.Forms.ComboBox()
         Me.txt_add_price = New System.Windows.Forms.TextBox()
         Me.txt_add_number = New System.Windows.Forms.TextBox()
         Me.txt_add_name = New System.Windows.Forms.TextBox()
         Me.txt_add_id = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.cbo_brand = New System.Windows.Forms.ComboBox()
         CType(Me.datagrid_product, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -118,6 +118,8 @@ Partial Class product
         '
         'datagrid_product
         '
+        Me.datagrid_product.AllowUserToAddRows = False
+        Me.datagrid_product.AllowUserToDeleteRows = False
         Me.datagrid_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datagrid_product.Location = New System.Drawing.Point(0, 91)
         Me.datagrid_product.Name = "datagrid_product"
@@ -147,6 +149,15 @@ Partial Class product
         Me.GroupBox1.Size = New System.Drawing.Size(762, 238)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
+        '
+        'cbo_brand
+        '
+        Me.cbo_brand.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.cbo_brand.FormattingEnabled = True
+        Me.cbo_brand.Location = New System.Drawing.Point(446, 22)
+        Me.cbo_brand.Name = "cbo_brand"
+        Me.cbo_brand.Size = New System.Drawing.Size(243, 34)
+        Me.cbo_brand.TabIndex = 10
         '
         'cbo_category
         '
@@ -189,6 +200,16 @@ Partial Class product
         Me.txt_add_id.Size = New System.Drawing.Size(243, 33)
         Me.txt_add_id.TabIndex = 5
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label8.Location = New System.Drawing.Point(373, 32)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(40, 24)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "ยี่ห้อ"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button3)
@@ -229,25 +250,6 @@ Partial Class product
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "เพิ่ม"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label8.Location = New System.Drawing.Point(373, 32)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 24)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "ยี่ห้อ"
-        '
-        'cbo_brand
-        '
-        Me.cbo_brand.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.cbo_brand.FormattingEnabled = True
-        Me.cbo_brand.Location = New System.Drawing.Point(446, 22)
-        Me.cbo_brand.Name = "cbo_brand"
-        Me.cbo_brand.Size = New System.Drawing.Size(243, 34)
-        Me.cbo_brand.TabIndex = 10
         '
         'product
         '

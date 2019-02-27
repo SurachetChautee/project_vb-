@@ -40,10 +40,12 @@
     End Sub
 
     Private Sub ToolStripButton3_Click_1(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
-
+        product.Show()
+        Me.Hide()
     End Sub
 
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
+
 
     End Sub
 
