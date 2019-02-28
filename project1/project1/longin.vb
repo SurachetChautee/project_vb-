@@ -34,6 +34,7 @@
             Dim dts As DataTable = cmd_excutedatatable()
 
             With main
+                .lbl_id.Text = dts.Rows(0)("emp_id")
                 .lblusername.Text = dts.Rows(0)("emp_usersname")
                 .lbl_name.Text = dts.Rows(0)("emp_name") & " " & dts.Rows(0)("emp_lastname")
 

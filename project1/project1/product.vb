@@ -25,6 +25,12 @@ Public Class product
         datagrid_product.Columns(4).HeaderText = "จำนวน"
         datagrid_product.Columns(5).HeaderText = "ราคา"
 
+
+
+
+
+
+
     End Sub
     Private Sub load_product()
         connect_open()
@@ -114,7 +120,10 @@ Public Class product
         If cmd.ExecuteNonQuery >= 1 Then
             MsgBox("เพิ่มข้อสินค้าสำเร็จ")
             update()
-
+            txt_add_id.Clear()
+            txt_add_name.Clear()
+            txt_add_number.Clear()
+            txt_add_price.Clear()
         Else
             MsgBox("เพิ่มข้อมูลสินค้าไม่สำเร็จ")
         End If
@@ -130,4 +139,60 @@ Public Class product
         da.Fill(ds, "table")
         datagrid_product.DataSource = ds.Tables("table")
     End Sub
+
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+        main.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim mbr As MsgBoxResult
+        mbr = MessageBox.Show("ต้องการลบข้อมูลหรือไม่ ?", "คำเตือน", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
+        If (mbr = MsgBoxResult.Ok) Then
+
+            Dim i As Integer = datagrid_product.CurrentRow.Index
+            Dim key As String = datagrid_product.Item(0, i).Value
+
+
+            sql = "delete from product where pro_id='" & key & "'"
+            cmd = New SqlCommand(sql, cn)
+            If cmd.ExecuteNonQuery >= 1 Then
+                MsgBox("ลบสำเร็จ")
+                update()
+
+            Else
+                MsgBox("ลบผิดพลาด")
+
+            End If
+        End If
+    End Sub
+
+    Private Sub datagrid_product_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagrid_product.CellContentClick
+
+    End Sub
+
+    Private Sub datagrid_product_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagrid_product.CellClick
+        Dim i As Integer = datagrid_product.CurrentRow.Index
+        Dim key As String = datagrid_product.Item(0, i).Value
+
+        txt_add_id.Text = datagrid_product.Item(0, i).Value
+        txt_add_name.Text = datagrid_product.Item(1, i).Value
+        txt_add_number.Text = datagrid_product.Item(2, i).Value
+        txt_add_price.Text = datagrid_product.Item(3, i).Value
+
+
+
+        For i = 0 To cbo_category.Items.Count - 1
+            If cbo_category.Items(i) = mydr.Item("staName") Then
+                cbo_category.SelectedIndex = i
+                Exit For
+            End If
+        Next
+        mydr.Close()
+
+
+    End Sub
+
+
 End Class

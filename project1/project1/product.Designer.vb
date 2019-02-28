@@ -42,9 +42,12 @@ Partial Class product
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         CType(Me.datagrid_product, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -107,9 +110,9 @@ Partial Class product
         '
         'Label7
         '
-        Me.Label7.BackColor = System.Drawing.Color.Tomato
+        Me.Label7.BackColor = System.Drawing.SystemColors.Info
         Me.Label7.Font = New System.Drawing.Font("FC Active", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label7.Location = New System.Drawing.Point(-1, -1)
+        Me.Label7.Location = New System.Drawing.Point(-1, 103)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(1104, 93)
         Me.Label7.TabIndex = 6
@@ -121,13 +124,13 @@ Partial Class product
         Me.datagrid_product.AllowUserToAddRows = False
         Me.datagrid_product.AllowUserToDeleteRows = False
         Me.datagrid_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datagrid_product.Location = New System.Drawing.Point(0, 91)
+        Me.datagrid_product.Location = New System.Drawing.Point(0, 187)
         Me.datagrid_product.Name = "datagrid_product"
         Me.datagrid_product.ReadOnly = True
         Me.datagrid_product.RowHeadersVisible = False
         Me.datagrid_product.RowTemplate.Height = 24
         Me.datagrid_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagrid_product.Size = New System.Drawing.Size(1099, 278)
+        Me.datagrid_product.Size = New System.Drawing.Size(1103, 278)
         Me.datagrid_product.TabIndex = 7
         '
         'GroupBox1
@@ -144,7 +147,7 @@ Partial Class product
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(29, 387)
+        Me.GroupBox1.Location = New System.Drawing.Point(54, 489)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(762, 238)
         Me.GroupBox1.TabIndex = 8
@@ -215,7 +218,7 @@ Partial Class product
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Location = New System.Drawing.Point(853, 387)
+        Me.GroupBox2.Location = New System.Drawing.Point(863, 489)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(191, 237)
         Me.GroupBox2.TabIndex = 9
@@ -251,11 +254,37 @@ Partial Class product
         Me.Button1.Text = "เพิ่ม"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.BackColor = System.Drawing.Color.DarkOrange
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(1100, 103)
+        Me.ToolStrip1.TabIndex = 10
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.AutoSize = False
+        Me.ToolStripButton4.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton4.Image = Global.project1.My.Resources.Resources._2
+        Me.ToolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.RightToLeftAutoMirrorImage = True
+        Me.ToolStripButton4.Size = New System.Drawing.Size(145, 100)
+        Me.ToolStripButton4.Text = "กลับสู่หน้าหลัก"
+        Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'product
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1100, 670)
+        Me.BackColor = System.Drawing.SystemColors.Info
+        Me.ClientSize = New System.Drawing.Size(1100, 767)
+        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.datagrid_product)
@@ -268,6 +297,8 @@ Partial Class product
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -293,4 +324,6 @@ Partial Class product
     Friend WithEvents Button1 As Button
     Friend WithEvents cbo_brand As ComboBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripButton4 As ToolStripButton
 End Class

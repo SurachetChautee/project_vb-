@@ -25,47 +25,10 @@ Partial Class employee
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.datagrid_search = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtserch = New System.Windows.Forms.TextBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.txt_add_password = New System.Windows.Forms.TextBox()
-        Me.txt_add_username = New System.Windows.Forms.TextBox()
-        Me.txt_add_tel = New System.Windows.Forms.TextBox()
-        Me.txt_add_lastname = New System.Windows.Forms.TextBox()
-        Me.txt_add_name = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.Rad_male = New System.Windows.Forms.RadioButton()
-        Me.rad_female = New System.Windows.Forms.RadioButton()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.txt_add_id = New System.Windows.Forms.TextBox()
-        Me.txt_showid = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.rad_showfmale = New System.Windows.Forms.RadioButton()
-        Me.rad_showmale = New System.Windows.Forms.RadioButton()
-        Me.txt_showpassword = New System.Windows.Forms.TextBox()
-        Me.txt_showusername = New System.Windows.Forms.TextBox()
-        Me.txt_showtel = New System.Windows.Forms.TextBox()
-        Me.txt_showlastname = New System.Windows.Forms.TextBox()
-        Me.txt_showname = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.txt_edit_id = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.rad_edit_fmale = New System.Windows.Forms.RadioButton()
@@ -82,7 +45,44 @@ Partial Class employee
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.txt_add_id = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.rad_female = New System.Windows.Forms.RadioButton()
+        Me.Rad_male = New System.Windows.Forms.RadioButton()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txt_add_password = New System.Windows.Forms.TextBox()
+        Me.txt_add_username = New System.Windows.Forms.TextBox()
+        Me.txt_add_tel = New System.Windows.Forms.TextBox()
+        Me.txt_add_lastname = New System.Windows.Forms.TextBox()
+        Me.txt_add_name = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.txt_showid = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.rad_showfmale = New System.Windows.Forms.RadioButton()
+        Me.rad_showmale = New System.Windows.Forms.RadioButton()
+        Me.txt_showpassword = New System.Windows.Forms.TextBox()
+        Me.txt_showusername = New System.Windows.Forms.TextBox()
+        Me.txt_showtel = New System.Windows.Forms.TextBox()
+        Me.txt_showlastname = New System.Windows.Forms.TextBox()
+        Me.txt_showname = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.Panel1.SuspendLayout()
         CType(Me.datagrid_search, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -132,6 +132,16 @@ Partial Class employee
         Me.Panel2.Size = New System.Drawing.Size(269, 130)
         Me.Panel2.TabIndex = 0
         '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("FC Active", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button3.Location = New System.Drawing.Point(108, 68)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 44)
+        Me.Button3.TabIndex = 1
+        Me.Button3.Text = "ค้นหา"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -175,421 +185,6 @@ Partial Class employee
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "แก้ไข"
         Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.txt_add_id)
-        Me.TabPage2.Controls.Add(Me.Label17)
-        Me.TabPage2.Controls.Add(Me.rad_female)
-        Me.TabPage2.Controls.Add(Me.Rad_male)
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.Button1)
-        Me.TabPage2.Controls.Add(Me.txt_add_password)
-        Me.TabPage2.Controls.Add(Me.txt_add_username)
-        Me.TabPage2.Controls.Add(Me.txt_add_tel)
-        Me.TabPage2.Controls.Add(Me.txt_add_lastname)
-        Me.TabPage2.Controls.Add(Me.txt_add_name)
-        Me.TabPage2.Controls.Add(Me.Label7)
-        Me.TabPage2.Controls.Add(Me.Label8)
-        Me.TabPage2.Controls.Add(Me.Label9)
-        Me.TabPage2.Controls.Add(Me.Label10)
-        Me.TabPage2.Controls.Add(Me.Label18)
-        Me.TabPage2.Controls.Add(Me.Label11)
-        Me.TabPage2.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TabPage2.Location = New System.Drawing.Point(4, 33)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(718, 461)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "เพิ่ม"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button2.Location = New System.Drawing.Point(370, 318)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(103, 42)
-        Me.Button2.TabIndex = 21
-        Me.Button2.Text = "เคลียร์"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button1.Location = New System.Drawing.Point(227, 318)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 42)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "เพิ่ม"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'txt_add_password
-        '
-        Me.txt_add_password.Location = New System.Drawing.Point(474, 164)
-        Me.txt_add_password.Multiline = True
-        Me.txt_add_password.Name = "txt_add_password"
-        Me.txt_add_password.Size = New System.Drawing.Size(196, 33)
-        Me.txt_add_password.TabIndex = 19
-        '
-        'txt_add_username
-        '
-        Me.txt_add_username.Location = New System.Drawing.Point(474, 96)
-        Me.txt_add_username.Multiline = True
-        Me.txt_add_username.Name = "txt_add_username"
-        Me.txt_add_username.Size = New System.Drawing.Size(196, 33)
-        Me.txt_add_username.TabIndex = 18
-        '
-        'txt_add_tel
-        '
-        Me.txt_add_tel.Location = New System.Drawing.Point(474, 36)
-        Me.txt_add_tel.Multiline = True
-        Me.txt_add_tel.Name = "txt_add_tel"
-        Me.txt_add_tel.Size = New System.Drawing.Size(196, 28)
-        Me.txt_add_tel.TabIndex = 17
-        '
-        'txt_add_lastname
-        '
-        Me.txt_add_lastname.Location = New System.Drawing.Point(145, 161)
-        Me.txt_add_lastname.Multiline = True
-        Me.txt_add_lastname.Name = "txt_add_lastname"
-        Me.txt_add_lastname.Size = New System.Drawing.Size(196, 31)
-        Me.txt_add_lastname.TabIndex = 16
-        '
-        'txt_add_name
-        '
-        Me.txt_add_name.Location = New System.Drawing.Point(145, 101)
-        Me.txt_add_name.Multiline = True
-        Me.txt_add_name.Name = "txt_add_name"
-        Me.txt_add_name.Size = New System.Drawing.Size(196, 35)
-        Me.txt_add_name.TabIndex = 15
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label7.Location = New System.Drawing.Point(355, 36)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(118, 28)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "เบอร์โทรศัพท์"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label8.Location = New System.Drawing.Point(361, 164)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(99, 28)
-        Me.Label8.TabIndex = 13
-        Me.Label8.Text = "Password"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label9.Location = New System.Drawing.Point(355, 96)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(105, 28)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "Username"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label10.Location = New System.Drawing.Point(19, 161)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(81, 28)
-        Me.Label10.TabIndex = 11
-        Me.Label10.Text = "นามสกุล"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label11.Location = New System.Drawing.Point(19, 101)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(34, 28)
-        Me.Label11.TabIndex = 10
-        Me.Label11.Text = "ชื่อ"
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.txt_showid)
-        Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Controls.Add(Me.rad_showfmale)
-        Me.TabPage1.Controls.Add(Me.rad_showmale)
-        Me.TabPage1.Controls.Add(Me.txt_showpassword)
-        Me.TabPage1.Controls.Add(Me.txt_showusername)
-        Me.TabPage1.Controls.Add(Me.txt_showtel)
-        Me.TabPage1.Controls.Add(Me.txt_showlastname)
-        Me.TabPage1.Controls.Add(Me.txt_showname)
-        Me.TabPage1.Controls.Add(Me.Label3)
-        Me.TabPage1.Controls.Add(Me.Label4)
-        Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.Label19)
-        Me.TabPage1.Controls.Add(Me.Label20)
-        Me.TabPage1.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TabPage1.Location = New System.Drawing.Point(4, 33)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(718, 461)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "แสดงข้อมูล"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(269, 129)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(726, 498)
-        Me.TabControl1.TabIndex = 1
-        '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.BackColor = System.Drawing.Color.DarkOrange
-        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripButton1})
-        Me.ToolStrip1.Location = New System.Drawing.Point(269, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(726, 103)
-        Me.ToolStrip1.TabIndex = 2
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'Rad_male
-        '
-        Me.Rad_male.AutoSize = True
-        Me.Rad_male.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Rad_male.Location = New System.Drawing.Point(147, 225)
-        Me.Rad_male.Name = "Rad_male"
-        Me.Rad_male.Size = New System.Drawing.Size(64, 32)
-        Me.Rad_male.TabIndex = 22
-        Me.Rad_male.TabStop = True
-        Me.Rad_male.Text = "ชาย"
-        Me.Rad_male.UseVisualStyleBackColor = True
-        '
-        'rad_female
-        '
-        Me.rad_female.AutoSize = True
-        Me.rad_female.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_female.Location = New System.Drawing.Point(213, 225)
-        Me.rad_female.Name = "rad_female"
-        Me.rad_female.Size = New System.Drawing.Size(71, 32)
-        Me.rad_female.TabIndex = 23
-        Me.rad_female.TabStop = True
-        Me.rad_female.Text = "หญิง"
-        Me.rad_female.UseVisualStyleBackColor = True
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label17.Location = New System.Drawing.Point(21, 225)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(44, 28)
-        Me.Label17.TabIndex = 24
-        Me.Label17.Text = "เพศ"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label18.Location = New System.Drawing.Point(19, 39)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(115, 28)
-        Me.Label18.TabIndex = 10
-        Me.Label18.Text = "รหัสพนักงาน"
-        '
-        'txt_add_id
-        '
-        Me.txt_add_id.Location = New System.Drawing.Point(145, 32)
-        Me.txt_add_id.Multiline = True
-        Me.txt_add_id.Name = "txt_add_id"
-        Me.txt_add_id.Size = New System.Drawing.Size(196, 35)
-        Me.txt_add_id.TabIndex = 25
-        '
-        'txt_showid
-        '
-        Me.txt_showid.Enabled = False
-        Me.txt_showid.Location = New System.Drawing.Point(157, 54)
-        Me.txt_showid.Multiline = True
-        Me.txt_showid.Name = "txt_showid"
-        Me.txt_showid.Size = New System.Drawing.Size(196, 31)
-        Me.txt_showid.TabIndex = 40
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label2.Location = New System.Drawing.Point(33, 243)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 28)
-        Me.Label2.TabIndex = 39
-        Me.Label2.Text = "เพศ"
-        '
-        'rad_showfmale
-        '
-        Me.rad_showfmale.AutoSize = True
-        Me.rad_showfmale.Enabled = False
-        Me.rad_showfmale.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_showfmale.Location = New System.Drawing.Point(225, 243)
-        Me.rad_showfmale.Name = "rad_showfmale"
-        Me.rad_showfmale.Size = New System.Drawing.Size(71, 32)
-        Me.rad_showfmale.TabIndex = 38
-        Me.rad_showfmale.TabStop = True
-        Me.rad_showfmale.Text = "หญิง"
-        Me.rad_showfmale.UseVisualStyleBackColor = True
-        '
-        'rad_showmale
-        '
-        Me.rad_showmale.AutoSize = True
-        Me.rad_showmale.Enabled = False
-        Me.rad_showmale.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.rad_showmale.Location = New System.Drawing.Point(159, 243)
-        Me.rad_showmale.Name = "rad_showmale"
-        Me.rad_showmale.Size = New System.Drawing.Size(64, 32)
-        Me.rad_showmale.TabIndex = 37
-        Me.rad_showmale.TabStop = True
-        Me.rad_showmale.Text = "ชาย"
-        Me.rad_showmale.UseVisualStyleBackColor = True
-        '
-        'txt_showpassword
-        '
-        Me.txt_showpassword.Enabled = False
-        Me.txt_showpassword.Location = New System.Drawing.Point(486, 182)
-        Me.txt_showpassword.Multiline = True
-        Me.txt_showpassword.Name = "txt_showpassword"
-        Me.txt_showpassword.Size = New System.Drawing.Size(196, 33)
-        Me.txt_showpassword.TabIndex = 36
-        '
-        'txt_showusername
-        '
-        Me.txt_showusername.Enabled = False
-        Me.txt_showusername.Location = New System.Drawing.Point(486, 114)
-        Me.txt_showusername.Multiline = True
-        Me.txt_showusername.Name = "txt_showusername"
-        Me.txt_showusername.Size = New System.Drawing.Size(196, 33)
-        Me.txt_showusername.TabIndex = 35
-        '
-        'txt_showtel
-        '
-        Me.txt_showtel.Enabled = False
-        Me.txt_showtel.Location = New System.Drawing.Point(486, 54)
-        Me.txt_showtel.Multiline = True
-        Me.txt_showtel.Name = "txt_showtel"
-        Me.txt_showtel.Size = New System.Drawing.Size(196, 28)
-        Me.txt_showtel.TabIndex = 34
-        '
-        'txt_showlastname
-        '
-        Me.txt_showlastname.Enabled = False
-        Me.txt_showlastname.Location = New System.Drawing.Point(157, 179)
-        Me.txt_showlastname.Multiline = True
-        Me.txt_showlastname.Name = "txt_showlastname"
-        Me.txt_showlastname.Size = New System.Drawing.Size(196, 31)
-        Me.txt_showlastname.TabIndex = 33
-        '
-        'txt_showname
-        '
-        Me.txt_showname.Enabled = False
-        Me.txt_showname.Location = New System.Drawing.Point(157, 119)
-        Me.txt_showname.Multiline = True
-        Me.txt_showname.Name = "txt_showname"
-        Me.txt_showname.Size = New System.Drawing.Size(196, 35)
-        Me.txt_showname.TabIndex = 32
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label3.Location = New System.Drawing.Point(367, 54)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(118, 28)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "เบอร์โทรศัพท์"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label4.Location = New System.Drawing.Point(373, 182)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 28)
-        Me.Label4.TabIndex = 30
-        Me.Label4.Text = "Password"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label5.Location = New System.Drawing.Point(367, 114)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(105, 28)
-        Me.Label5.TabIndex = 29
-        Me.Label5.Text = "Username"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label6.Location = New System.Drawing.Point(31, 179)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(81, 28)
-        Me.Label6.TabIndex = 28
-        Me.Label6.Text = "นามสกุล"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label19.Location = New System.Drawing.Point(31, 57)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(115, 28)
-        Me.Label19.TabIndex = 26
-        Me.Label19.Text = "รหัสพนักงาน"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label20.Location = New System.Drawing.Point(31, 119)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(34, 28)
-        Me.Label20.TabIndex = 27
-        Me.Label20.Text = "ชื่อ"
-        '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.AutoSize = False
-        Me.ToolStripButton4.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripButton4.Image = Global.project1.My.Resources.Resources._1
-        Me.ToolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.RightToLeftAutoMirrorImage = True
-        Me.ToolStripButton4.Size = New System.Drawing.Size(145, 100)
-        Me.ToolStripButton4.Text = "ลบข้อมูล"
-        Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.AutoSize = False
-        Me.ToolStripButton1.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripButton1.Image = Global.project1.My.Resources.Resources.logout
-        Me.ToolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.RightToLeftAutoMirrorImage = True
-        Me.ToolStripButton1.Size = New System.Drawing.Size(145, 100)
-        Me.ToolStripButton1.Text = "กลับสู่หน้าหลัก"
-        Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'txt_edit_id
         '
@@ -744,15 +339,420 @@ Partial Class employee
         Me.Label22.TabIndex = 34
         Me.Label22.Text = "ชื่อ"
         '
-        'Button3
+        'TabPage2
         '
-        Me.Button3.Font = New System.Drawing.Font("FC Active", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button3.Location = New System.Drawing.Point(108, 68)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 44)
-        Me.Button3.TabIndex = 1
-        Me.Button3.Text = "ค้นหา"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.TabPage2.Controls.Add(Me.txt_add_id)
+        Me.TabPage2.Controls.Add(Me.Label17)
+        Me.TabPage2.Controls.Add(Me.rad_female)
+        Me.TabPage2.Controls.Add(Me.Rad_male)
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.Button1)
+        Me.TabPage2.Controls.Add(Me.txt_add_password)
+        Me.TabPage2.Controls.Add(Me.txt_add_username)
+        Me.TabPage2.Controls.Add(Me.txt_add_tel)
+        Me.TabPage2.Controls.Add(Me.txt_add_lastname)
+        Me.TabPage2.Controls.Add(Me.txt_add_name)
+        Me.TabPage2.Controls.Add(Me.Label7)
+        Me.TabPage2.Controls.Add(Me.Label8)
+        Me.TabPage2.Controls.Add(Me.Label9)
+        Me.TabPage2.Controls.Add(Me.Label10)
+        Me.TabPage2.Controls.Add(Me.Label18)
+        Me.TabPage2.Controls.Add(Me.Label11)
+        Me.TabPage2.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.TabPage2.Location = New System.Drawing.Point(4, 33)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(718, 461)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "เพิ่ม"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'txt_add_id
+        '
+        Me.txt_add_id.Location = New System.Drawing.Point(145, 32)
+        Me.txt_add_id.Multiline = True
+        Me.txt_add_id.Name = "txt_add_id"
+        Me.txt_add_id.Size = New System.Drawing.Size(196, 35)
+        Me.txt_add_id.TabIndex = 25
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label17.Location = New System.Drawing.Point(21, 225)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(44, 28)
+        Me.Label17.TabIndex = 24
+        Me.Label17.Text = "เพศ"
+        '
+        'rad_female
+        '
+        Me.rad_female.AutoSize = True
+        Me.rad_female.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.rad_female.Location = New System.Drawing.Point(213, 225)
+        Me.rad_female.Name = "rad_female"
+        Me.rad_female.Size = New System.Drawing.Size(71, 32)
+        Me.rad_female.TabIndex = 23
+        Me.rad_female.TabStop = True
+        Me.rad_female.Text = "หญิง"
+        Me.rad_female.UseVisualStyleBackColor = True
+        '
+        'Rad_male
+        '
+        Me.Rad_male.AutoSize = True
+        Me.Rad_male.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Rad_male.Location = New System.Drawing.Point(147, 225)
+        Me.Rad_male.Name = "Rad_male"
+        Me.Rad_male.Size = New System.Drawing.Size(64, 32)
+        Me.Rad_male.TabIndex = 22
+        Me.Rad_male.TabStop = True
+        Me.Rad_male.Text = "ชาย"
+        Me.Rad_male.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button2.Location = New System.Drawing.Point(370, 318)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(103, 42)
+        Me.Button2.TabIndex = 21
+        Me.Button2.Text = "เคลียร์"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button1.Location = New System.Drawing.Point(227, 318)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(107, 42)
+        Me.Button1.TabIndex = 20
+        Me.Button1.Text = "เพิ่ม"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txt_add_password
+        '
+        Me.txt_add_password.Location = New System.Drawing.Point(474, 164)
+        Me.txt_add_password.Multiline = True
+        Me.txt_add_password.Name = "txt_add_password"
+        Me.txt_add_password.Size = New System.Drawing.Size(196, 33)
+        Me.txt_add_password.TabIndex = 19
+        '
+        'txt_add_username
+        '
+        Me.txt_add_username.Location = New System.Drawing.Point(474, 96)
+        Me.txt_add_username.Multiline = True
+        Me.txt_add_username.Name = "txt_add_username"
+        Me.txt_add_username.Size = New System.Drawing.Size(196, 33)
+        Me.txt_add_username.TabIndex = 18
+        '
+        'txt_add_tel
+        '
+        Me.txt_add_tel.Location = New System.Drawing.Point(474, 36)
+        Me.txt_add_tel.Multiline = True
+        Me.txt_add_tel.Name = "txt_add_tel"
+        Me.txt_add_tel.Size = New System.Drawing.Size(196, 28)
+        Me.txt_add_tel.TabIndex = 17
+        '
+        'txt_add_lastname
+        '
+        Me.txt_add_lastname.Location = New System.Drawing.Point(145, 161)
+        Me.txt_add_lastname.Multiline = True
+        Me.txt_add_lastname.Name = "txt_add_lastname"
+        Me.txt_add_lastname.Size = New System.Drawing.Size(196, 31)
+        Me.txt_add_lastname.TabIndex = 16
+        '
+        'txt_add_name
+        '
+        Me.txt_add_name.Location = New System.Drawing.Point(145, 101)
+        Me.txt_add_name.Multiline = True
+        Me.txt_add_name.Name = "txt_add_name"
+        Me.txt_add_name.Size = New System.Drawing.Size(196, 35)
+        Me.txt_add_name.TabIndex = 15
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label7.Location = New System.Drawing.Point(355, 36)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(118, 28)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "เบอร์โทรศัพท์"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label8.Location = New System.Drawing.Point(361, 164)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(99, 28)
+        Me.Label8.TabIndex = 13
+        Me.Label8.Text = "Password"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label9.Location = New System.Drawing.Point(355, 96)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(105, 28)
+        Me.Label9.TabIndex = 12
+        Me.Label9.Text = "Username"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label10.Location = New System.Drawing.Point(19, 161)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(81, 28)
+        Me.Label10.TabIndex = 11
+        Me.Label10.Text = "นามสกุล"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label18.Location = New System.Drawing.Point(19, 39)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(115, 28)
+        Me.Label18.TabIndex = 10
+        Me.Label18.Text = "รหัสพนักงาน"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label11.Location = New System.Drawing.Point(19, 101)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(34, 28)
+        Me.Label11.TabIndex = 10
+        Me.Label11.Text = "ชื่อ"
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.txt_showid)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Controls.Add(Me.rad_showfmale)
+        Me.TabPage1.Controls.Add(Me.rad_showmale)
+        Me.TabPage1.Controls.Add(Me.txt_showpassword)
+        Me.TabPage1.Controls.Add(Me.txt_showusername)
+        Me.TabPage1.Controls.Add(Me.txt_showtel)
+        Me.TabPage1.Controls.Add(Me.txt_showlastname)
+        Me.TabPage1.Controls.Add(Me.txt_showname)
+        Me.TabPage1.Controls.Add(Me.Label3)
+        Me.TabPage1.Controls.Add(Me.Label4)
+        Me.TabPage1.Controls.Add(Me.Label5)
+        Me.TabPage1.Controls.Add(Me.Label6)
+        Me.TabPage1.Controls.Add(Me.Label19)
+        Me.TabPage1.Controls.Add(Me.Label20)
+        Me.TabPage1.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.TabPage1.Location = New System.Drawing.Point(4, 33)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(718, 461)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "แสดงข้อมูล"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'txt_showid
+        '
+        Me.txt_showid.Enabled = False
+        Me.txt_showid.Location = New System.Drawing.Point(157, 54)
+        Me.txt_showid.Multiline = True
+        Me.txt_showid.Name = "txt_showid"
+        Me.txt_showid.Size = New System.Drawing.Size(196, 31)
+        Me.txt_showid.TabIndex = 40
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label2.Location = New System.Drawing.Point(33, 243)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(44, 28)
+        Me.Label2.TabIndex = 39
+        Me.Label2.Text = "เพศ"
+        '
+        'rad_showfmale
+        '
+        Me.rad_showfmale.AutoSize = True
+        Me.rad_showfmale.Enabled = False
+        Me.rad_showfmale.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.rad_showfmale.Location = New System.Drawing.Point(225, 243)
+        Me.rad_showfmale.Name = "rad_showfmale"
+        Me.rad_showfmale.Size = New System.Drawing.Size(71, 32)
+        Me.rad_showfmale.TabIndex = 38
+        Me.rad_showfmale.TabStop = True
+        Me.rad_showfmale.Text = "หญิง"
+        Me.rad_showfmale.UseVisualStyleBackColor = True
+        '
+        'rad_showmale
+        '
+        Me.rad_showmale.AutoSize = True
+        Me.rad_showmale.Enabled = False
+        Me.rad_showmale.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.rad_showmale.Location = New System.Drawing.Point(159, 243)
+        Me.rad_showmale.Name = "rad_showmale"
+        Me.rad_showmale.Size = New System.Drawing.Size(64, 32)
+        Me.rad_showmale.TabIndex = 37
+        Me.rad_showmale.TabStop = True
+        Me.rad_showmale.Text = "ชาย"
+        Me.rad_showmale.UseVisualStyleBackColor = True
+        '
+        'txt_showpassword
+        '
+        Me.txt_showpassword.Enabled = False
+        Me.txt_showpassword.Location = New System.Drawing.Point(486, 182)
+        Me.txt_showpassword.Multiline = True
+        Me.txt_showpassword.Name = "txt_showpassword"
+        Me.txt_showpassword.Size = New System.Drawing.Size(196, 33)
+        Me.txt_showpassword.TabIndex = 36
+        '
+        'txt_showusername
+        '
+        Me.txt_showusername.Enabled = False
+        Me.txt_showusername.Location = New System.Drawing.Point(486, 114)
+        Me.txt_showusername.Multiline = True
+        Me.txt_showusername.Name = "txt_showusername"
+        Me.txt_showusername.Size = New System.Drawing.Size(196, 33)
+        Me.txt_showusername.TabIndex = 35
+        '
+        'txt_showtel
+        '
+        Me.txt_showtel.Enabled = False
+        Me.txt_showtel.Location = New System.Drawing.Point(486, 54)
+        Me.txt_showtel.Multiline = True
+        Me.txt_showtel.Name = "txt_showtel"
+        Me.txt_showtel.Size = New System.Drawing.Size(196, 28)
+        Me.txt_showtel.TabIndex = 34
+        '
+        'txt_showlastname
+        '
+        Me.txt_showlastname.Enabled = False
+        Me.txt_showlastname.Location = New System.Drawing.Point(157, 179)
+        Me.txt_showlastname.Multiline = True
+        Me.txt_showlastname.Name = "txt_showlastname"
+        Me.txt_showlastname.Size = New System.Drawing.Size(196, 31)
+        Me.txt_showlastname.TabIndex = 33
+        '
+        'txt_showname
+        '
+        Me.txt_showname.Enabled = False
+        Me.txt_showname.Location = New System.Drawing.Point(157, 119)
+        Me.txt_showname.Multiline = True
+        Me.txt_showname.Name = "txt_showname"
+        Me.txt_showname.Size = New System.Drawing.Size(196, 35)
+        Me.txt_showname.TabIndex = 32
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label3.Location = New System.Drawing.Point(367, 54)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(118, 28)
+        Me.Label3.TabIndex = 31
+        Me.Label3.Text = "เบอร์โทรศัพท์"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label4.Location = New System.Drawing.Point(373, 182)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(99, 28)
+        Me.Label4.TabIndex = 30
+        Me.Label4.Text = "Password"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label5.Location = New System.Drawing.Point(367, 114)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(105, 28)
+        Me.Label5.TabIndex = 29
+        Me.Label5.Text = "Username"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label6.Location = New System.Drawing.Point(31, 179)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(81, 28)
+        Me.Label6.TabIndex = 28
+        Me.Label6.Text = "นามสกุล"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label19.Location = New System.Drawing.Point(31, 57)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(115, 28)
+        Me.Label19.TabIndex = 26
+        Me.Label19.Text = "รหัสพนักงาน"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label20.Location = New System.Drawing.Point(31, 119)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(34, 28)
+        Me.Label20.TabIndex = 27
+        Me.Label20.Text = "ชื่อ"
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
+        Me.TabControl1.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.TabControl1.Location = New System.Drawing.Point(269, 129)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(726, 498)
+        Me.TabControl1.TabIndex = 1
+        '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.BackColor = System.Drawing.Color.DarkOrange
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(269, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(726, 103)
+        Me.ToolStrip1.TabIndex = 2
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.AutoSize = False
+        Me.ToolStripButton4.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton4.Image = Global.project1.My.Resources.Resources._1
+        Me.ToolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.RightToLeftAutoMirrorImage = True
+        Me.ToolStripButton4.Size = New System.Drawing.Size(145, 100)
+        Me.ToolStripButton4.Text = "ลบข้อมูล"
+        Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.AutoSize = False
+        Me.ToolStripButton1.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton1.Image = Global.project1.My.Resources.Resources.logout
+        Me.ToolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.RightToLeftAutoMirrorImage = True
+        Me.ToolStripButton1.Size = New System.Drawing.Size(145, 100)
+        Me.ToolStripButton1.Text = "กลับสู่หน้าหลัก"
+        Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'employee
         '
@@ -765,6 +765,7 @@ Partial Class employee
         Me.Controls.Add(Me.Panel1)
         Me.Name = "employee"
         Me.Text = "employee"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         CType(Me.datagrid_search, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)

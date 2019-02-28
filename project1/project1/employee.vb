@@ -20,7 +20,10 @@ Public Class employee
         End If
 
 
-
+        If txt_add_id.Text = "" Or txt_add_username.Text = "" Or txt_add_password.Text = "" Or txt_add_name.Text = "" Or txt_add_lastname.Text = "" Or txt_add_tel.Text = "" Or Rad_male.Checked = False Or rad_edit_fmale.Checked = False Then
+            MessageBox.Show("ใส่ข้อมูลให้ครบถ้วน")
+            Exit Sub
+        End If
         connect_open()
         sql = "insert into employee(emp_id,emp_usersname,emp_password,emp_name,emp_lastname,emp_sex,emp_tel) values(@id,@username,@password,@name,@lastname,@sex,@tel)"
         cmd = New SqlCommand(sql, cn)
@@ -33,7 +36,7 @@ Public Class employee
         cmd.Parameters.AddWithValue("lastname", txt_add_lastname.Text)
         cmd.Parameters.AddWithValue("sex", gender)
         cmd.Parameters.AddWithValue("tel", txt_add_tel.Text)
-        '  cmd.ExecuteNonQuery()
+
 
         If cmd.ExecuteNonQuery >= 1 Then
             MsgBox("เพิ่มข้อมูลพนักงานสำเร็จ")
@@ -259,6 +262,7 @@ Public Class employee
         If (mbr = MsgBoxResult.Ok) Then
 
             connect_open()
+
             sql = String.Format("update employee Set emp_usersname='{0}',emp_password='{1}',emp_name='{2}',emp_lastname='{3}',emp_sex='{4}',emp_tel='{5}' where emp_id='{6}'", txt_edit_username.Text, txt_edit_password.Text, txt_edit_name.Text, txt_edit_lastname.Text, gender, txt_edit_tel.Text, txt_edit_id.Text)
             cmd = New SqlCommand(sql, cn)
             If cmd.ExecuteNonQuery >= 1 Then
@@ -277,15 +281,21 @@ Public Class employee
     End Sub
 
     Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim sr As MsgBoxResult
-        sr = MessageBox.Show("ค้นหาข้อมูลหรือไม่ ?", "คำเตือน", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
-        If (sr = MsgBoxResult.Ok) Then
 
-            connect_open()
+
+        connect_open()
             sql = String.Format("select * from employee where emp_id like '%{0}%'or emp_name like '%{0}%'or emp_name like'%{0}%'or emp_lastname like'%{0}%'or emp_tel like'%{0}%' ", txtserch.Text)
 
             datagrid_search.DataSource = cmd_excutedatatable()
-        End If
 
+
+    End Sub
+
+    Private Sub rad_edit_male_CheckedChanged(sender As Object, e As EventArgs) Handles rad_edit_male.CheckedChanged
+        gender = "ชาย"
+    End Sub
+
+    Private Sub rad_edit_fmale_CheckedChanged(sender As Object, e As EventArgs) Handles rad_edit_fmale.CheckedChanged
+        gender = "หญิง"
     End Sub
 End Class

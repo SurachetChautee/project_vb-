@@ -88,6 +88,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="brand.Designer.vb">
+      <DependentUpon>brand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="brand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.vb">
+      <DependentUpon>Category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Category.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="code.vb" />
     <Compile Include="employee.Designer.vb">
       <DependentUpon>employee.vb</DependentUpon>
@@ -137,6 +149,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="brand.resx">
+      <DependentUpon>brand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="employee.resx">
       <DependentUpon>employee.vb</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +248,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet-earth.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

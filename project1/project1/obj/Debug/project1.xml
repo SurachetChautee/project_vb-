@@ -27,6 +27,16 @@ project1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:project1.My.Resources.Resources._11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources._2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:project1.My.Resources.Resources._exit">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -38,6 +48,11 @@ project1
 </summary>
 </member>
 <member name="P:project1.My.Resources.Resources.delete">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.delivery">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -72,12 +87,22 @@ project1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:project1.My.Resources.Resources.logout1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:project1.My.Resources.Resources.office_worker_outline">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:project1.My.Resources.Resources.office_worker_outline1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.planet_earth">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
