@@ -2,8 +2,18 @@
 
 Public Class brand
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
-        main.Show()
-        Me.Hide()
+        Dim mbr As MsgBoxResult
+        mbr = MessageBox.Show("ต้องการกลับสู่หน้าหลักหรือไม่ ?", "คำเตือน", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
+        If (mbr = MsgBoxResult.Ok) Then
+
+            main.Show()
+            Me.Hide()
+
+        End If
+
+
+
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -16,7 +26,7 @@ Public Class brand
             sql = String.Format("update brand Set bra_name='{0}' where bra_id='{1}'", txt_show_2.Text, txt_sohw_1.Text)
             cmd = New SqlCommand(sql, cn)
             If cmd.ExecuteNonQuery >= 1 Then
-                MsgBox("แก้ไขข้อมูลพนักงานสำเร็จ")
+                MsgBox("แก้ไขข้อมูลสำเร็จ")
                 update()
                 update2()
             Else

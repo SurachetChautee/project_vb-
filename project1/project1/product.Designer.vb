@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class product
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class product
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.datagrid_product = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbo_brand = New System.Windows.Forms.ComboBox()
@@ -108,29 +108,21 @@ Partial Class product
         Me.Label6.Size = New System.Drawing.Size(0, 17)
         Me.Label6.TabIndex = 5
         '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.SystemColors.Info
-        Me.Label7.Font = New System.Drawing.Font("FC Active", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label7.Location = New System.Drawing.Point(-1, 103)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(1104, 93)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "จัดการสินค้า"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'datagrid_product
         '
         Me.datagrid_product.AllowUserToAddRows = False
         Me.datagrid_product.AllowUserToDeleteRows = False
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.datagrid_product.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.datagrid_product.BackgroundColor = System.Drawing.Color.White
         Me.datagrid_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datagrid_product.Location = New System.Drawing.Point(0, 187)
+        Me.datagrid_product.Location = New System.Drawing.Point(0, 128)
         Me.datagrid_product.Name = "datagrid_product"
         Me.datagrid_product.ReadOnly = True
         Me.datagrid_product.RowHeadersVisible = False
         Me.datagrid_product.RowTemplate.Height = 24
         Me.datagrid_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagrid_product.Size = New System.Drawing.Size(1103, 278)
+        Me.datagrid_product.Size = New System.Drawing.Size(1103, 337)
         Me.datagrid_product.TabIndex = 7
         '
         'GroupBox1
@@ -161,6 +153,7 @@ Partial Class product
         Me.cbo_brand.Name = "cbo_brand"
         Me.cbo_brand.Size = New System.Drawing.Size(243, 34)
         Me.cbo_brand.TabIndex = 10
+        Me.cbo_brand.Text = "---โปรดเลือกยี่ห้อ---"
         '
         'cbo_category
         '
@@ -170,6 +163,7 @@ Partial Class product
         Me.cbo_category.Name = "cbo_category"
         Me.cbo_category.Size = New System.Drawing.Size(243, 34)
         Me.cbo_category.TabIndex = 10
+        Me.cbo_category.Text = "---โปรดเลือกประเภท---"
         '
         'txt_add_price
         '
@@ -288,7 +282,6 @@ Partial Class product
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.datagrid_product)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Name = "product"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -310,7 +303,6 @@ Partial Class product
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents datagrid_product As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents txt_add_price As TextBox

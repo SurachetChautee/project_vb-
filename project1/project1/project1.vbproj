@@ -147,6 +147,12 @@
     <Compile Include="product.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="sale.Designer.vb">
+      <DependentUpon>sale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sale.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="brand.resx">
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="product.resx">
       <DependentUpon>product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sale.resx">
+      <DependentUpon>sale.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

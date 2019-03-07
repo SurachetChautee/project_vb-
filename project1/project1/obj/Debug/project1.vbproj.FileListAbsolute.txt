@@ -30,3 +30,4 @@ D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\D
 D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.pdb
 D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.Category.resources
 D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.brand.resources
+D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.sale.resources

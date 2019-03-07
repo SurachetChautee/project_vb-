@@ -13,6 +13,7 @@
     End Sub
 
     Private Sub btn_longin_Click(sender As Object, e As EventArgs) Handles btn_longin.Click
+
         If txt_username.Text = "" Or txt_password.Text = "" Then
             MessageBox.Show("กรุณากรอกข้อมูลให้ครบ")
             Return
@@ -40,7 +41,6 @@
 
                 .lbl_time.Text = Date.Now
             End With
-
 
 
         End If

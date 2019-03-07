@@ -107,6 +107,7 @@ Partial Class employee
         '
         Me.datagrid_search.AllowUserToAddRows = False
         Me.datagrid_search.AllowUserToDeleteRows = False
+        Me.datagrid_search.BackgroundColor = System.Drawing.Color.White
         Me.datagrid_search.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.datagrid_search.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datagrid_search.Dock = System.Windows.Forms.DockStyle.Fill
@@ -721,7 +722,7 @@ Partial Class employee
         '
         Me.ToolStrip1.BackColor = System.Drawing.Color.DarkOrange
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripButton1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(269, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(726, 103)
@@ -764,8 +765,8 @@ Partial Class employee
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "employee"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "employee"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         CType(Me.datagrid_search, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)

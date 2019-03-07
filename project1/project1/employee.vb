@@ -20,10 +20,11 @@ Public Class employee
         End If
 
 
-        If txt_add_id.Text = "" Or txt_add_username.Text = "" Or txt_add_password.Text = "" Or txt_add_name.Text = "" Or txt_add_lastname.Text = "" Or txt_add_tel.Text = "" Or Rad_male.Checked = False Or rad_edit_fmale.Checked = False Then
+        If txt_add_id.Text = "" Or txt_add_username.Text = "" Or txt_add_password.Text = "" Or txt_add_name.Text = "" Or txt_add_lastname.Text = "" Or txt_add_tel.Text = "" Then
             MessageBox.Show("ใส่ข้อมูลให้ครบถ้วน")
             Exit Sub
         End If
+
         connect_open()
         sql = "insert into employee(emp_id,emp_usersname,emp_password,emp_name,emp_lastname,emp_sex,emp_tel) values(@id,@username,@password,@name,@lastname,@sex,@tel)"
         cmd = New SqlCommand(sql, cn)
@@ -67,6 +68,8 @@ Public Class employee
         datagrid_search.Columns(4).HeaderText = "นามสกุล"
         datagrid_search.Columns(5).HeaderText = "เพศ"
         datagrid_search.Columns(6).HeaderText = "เบอร์โทรศัพท์"
+        Rad_male.Select()
+
 
 
     End Sub
@@ -168,7 +171,7 @@ Public Class employee
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        txt_add_id.Clear()
         txt_add_username.Clear()
         txt_add_password.Clear()
         txt_add_name.Clear()

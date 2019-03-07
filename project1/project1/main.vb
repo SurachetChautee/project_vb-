@@ -60,7 +60,8 @@
     End Sub
 
     Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
-
+        sale.Show()
+        Me.Hide()
     End Sub
 
     Private Sub ToolStripButton2_Click_1(sender As Object, e As EventArgs) Handles ToolStripButton2.Click

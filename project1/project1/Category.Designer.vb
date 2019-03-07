@@ -186,6 +186,7 @@ Partial Class Category
         '
         'TabPage2
         '
+        Me.TabPage2.BackColor = System.Drawing.SystemColors.Info
         Me.TabPage2.Controls.Add(Me.datagrid_category2)
         Me.TabPage2.Controls.Add(Me.txt_sohw_1)
         Me.TabPage2.Controls.Add(Me.txt_show_2)
@@ -196,10 +197,9 @@ Partial Class Category
         Me.TabPage2.Location = New System.Drawing.Point(4, 35)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(630, 497)
+        Me.TabPage2.Size = New System.Drawing.Size(630, 686)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "แก้ไข"
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'datagrid_category2
         '
@@ -212,13 +212,13 @@ Partial Class Category
         Me.datagrid_category2.RowHeadersVisible = False
         Me.datagrid_category2.RowTemplate.Height = 24
         Me.datagrid_category2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagrid_category2.Size = New System.Drawing.Size(630, 175)
+        Me.datagrid_category2.Size = New System.Drawing.Size(630, 298)
         Me.datagrid_category2.TabIndex = 12
         '
         'txt_sohw_1
         '
         Me.txt_sohw_1.Enabled = False
-        Me.txt_sohw_1.Location = New System.Drawing.Point(217, 220)
+        Me.txt_sohw_1.Location = New System.Drawing.Point(219, 335)
         Me.txt_sohw_1.Multiline = True
         Me.txt_sohw_1.Name = "txt_sohw_1"
         Me.txt_sohw_1.Size = New System.Drawing.Size(226, 44)
@@ -226,7 +226,7 @@ Partial Class Category
         '
         'txt_show_2
         '
-        Me.txt_show_2.Location = New System.Drawing.Point(217, 318)
+        Me.txt_show_2.Location = New System.Drawing.Point(219, 433)
         Me.txt_show_2.Multiline = True
         Me.txt_show_2.Name = "txt_show_2"
         Me.txt_show_2.Size = New System.Drawing.Size(226, 44)
@@ -236,7 +236,7 @@ Partial Class Category
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label3.Location = New System.Drawing.Point(32, 220)
+        Me.Label3.Location = New System.Drawing.Point(34, 335)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(160, 29)
         Me.Label3.TabIndex = 9
@@ -244,7 +244,7 @@ Partial Class Category
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(275, 396)
+        Me.Button4.Location = New System.Drawing.Point(277, 511)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(105, 41)
         Me.Button4.TabIndex = 11
@@ -255,7 +255,7 @@ Partial Class Category
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label4.Location = New System.Drawing.Point(32, 308)
+        Me.Label4.Location = New System.Drawing.Point(34, 423)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(101, 29)
         Me.Label4.TabIndex = 10
