@@ -76,6 +76,7 @@ Partial Class longin
         Me.txt_username.Name = "txt_username"
         Me.txt_username.Size = New System.Drawing.Size(442, 49)
         Me.txt_username.TabIndex = 3
+        Me.txt_username.Text = "admin"
         '
         'txt_password
         '
@@ -86,6 +87,7 @@ Partial Class longin
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(442, 49)
         Me.txt_password.TabIndex = 4
+        Me.txt_password.Text = "12345"
         '
         'btn_longin
         '

@@ -42,6 +42,11 @@ project1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:project1.My.Resources.Resources.add">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:project1.My.Resources.Resources.boy">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -53,6 +58,11 @@ project1
 </summary>
 </member>
 <member name="P:project1.My.Resources.Resources.delivery">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.ecommerce_ban">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -78,6 +88,11 @@ project1
 </summary>
 </member>
 <member name="P:project1.My.Resources.Resources.kisspng_computer_icons_silhouette_avatar_two_person_5b36277641e667_2120800315302757022699">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.kisspng_computer_icons_silhouette_avatar_two_person_5b36277641e6671">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -112,7 +127,22 @@ project1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:project1.My.Resources.Resources.shopping_basket">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:project1.My.Resources.Resources.Simple_Background_Images_53">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.test">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.trash">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

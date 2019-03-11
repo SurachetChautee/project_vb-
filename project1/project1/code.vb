@@ -17,6 +17,10 @@ Module code
     'sql data set'
     Friend ds As DataSet
 
+
+    Friend proIDFind As String
+    Friend emp_id As String
+
     'ฟังชั่น ฐานข้อมูล'
     Friend Sub connect_open()
         If cn.State = ConnectionState.Closed Then cn.Open()

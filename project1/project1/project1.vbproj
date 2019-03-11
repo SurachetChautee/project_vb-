@@ -113,6 +113,12 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmProductList.Designer.vb">
+      <DependentUpon>frmProductList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="longin.Designer.vb">
       <DependentUpon>longin.vb</DependentUpon>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductList.resx">
+      <DependentUpon>frmProductList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="longin.resx">
       <DependentUpon>longin.vb</DependentUpon>
@@ -272,6 +281,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\planet-earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-silhouette-avatar-two-person-5b36277641e667.21208003153027570226991.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecommerce-ban.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
