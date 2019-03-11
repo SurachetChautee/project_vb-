@@ -380,7 +380,7 @@ Partial Class sale
         Me.lblEmployee.BackColor = System.Drawing.SystemColors.HighlightText
         Me.lblEmployee.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblEmployee.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lblEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblEmployee.ForeColor = System.Drawing.Color.Black
         Me.lblEmployee.Location = New System.Drawing.Point(191, 86)
         Me.lblEmployee.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEmployee.Name = "lblEmployee"
@@ -403,7 +403,7 @@ Partial Class sale
         Me.lblSaleDate.BackColor = System.Drawing.SystemColors.HighlightText
         Me.lblSaleDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblSaleDate.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lblSaleDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblSaleDate.ForeColor = System.Drawing.Color.Black
         Me.lblSaleDate.Location = New System.Drawing.Point(521, 16)
         Me.lblSaleDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSaleDate.Name = "lblSaleDate"
@@ -426,7 +426,7 @@ Partial Class sale
         Me.lblSaleID.BackColor = System.Drawing.SystemColors.HighlightText
         Me.lblSaleID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblSaleID.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lblSaleID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblSaleID.ForeColor = System.Drawing.Color.Black
         Me.lblSaleID.Location = New System.Drawing.Point(191, 20)
         Me.lblSaleID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSaleID.Name = "lblSaleID"

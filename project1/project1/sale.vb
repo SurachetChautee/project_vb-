@@ -15,7 +15,7 @@ Public Class sale
 
         Dim curYear As Integer = Format(Date.Now, "yyyy") + 543
         connect_open()
-        strSQL = "Select Max(id_bill) as maxSale from bill1 Where id_bill Like 'S" & curYear & "%' "
+        strSQL = "Select Max(sale_id) as maxSale from sale Where sale_id Like 'S" & curYear & "%' "
         myComm = New SqlCommand(strSQL, cn)
         myComm.CommandTimeout = 15
         myComm.CommandType = CommandType.Text
@@ -46,6 +46,7 @@ Public Class sale
 
     Private Sub sale_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btn_save.Enabled = False
+        ' lblSaleID.Text = getNewBill()
     End Sub
 
     Private Sub btnSale_Click(sender As Object, e As EventArgs) Handles btnSale.Click
