@@ -32,7 +32,22 @@ project1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:project1.My.Resources.Resources._111">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:project1.My.Resources.Resources._2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources._222">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources._2222">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -43,6 +58,11 @@ project1
 </summary>
 </member>
 <member name="P:project1.My.Resources.Resources.add">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.add__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -118,6 +138,31 @@ project1
 </summary>
 </member>
 <member name="P:project1.My.Resources.Resources.planet_earth">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.printer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.receipt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.receive">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.save">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:project1.My.Resources.Resources.searchmagnifierinterfacesymbol1_79893">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

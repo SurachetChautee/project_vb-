@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
+
 Public Class employee
     Dim gender As String
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtserch.TextChanged
@@ -254,7 +255,7 @@ Public Class employee
         mbr = MessageBox.Show("ต้องการกลับสู่หน้าหลักหรือไม่ ?", "คำเตือน", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
         If (mbr = MsgBoxResult.Ok) Then
             main.Show()
-            Me.Hide()
+            Me.Close()
         End If
     End Sub
 

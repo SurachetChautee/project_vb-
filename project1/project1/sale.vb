@@ -7,6 +7,7 @@ Public Class sale
     Dim myComm As New SqlCommand
     Dim myDR As SqlDataReader
 
+
     Private Function getNewBill() As String
 
         ''
@@ -46,28 +47,23 @@ Public Class sale
 
     Private Sub sale_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btn_save.Enabled = False
-        ' lblSaleID.Text = getNewBill()
     End Sub
 
     Private Sub btnSale_Click(sender As Object, e As EventArgs) Handles btnSale.Click
-        Dim dts As DataTable = cmd_excutedatatable()
-        lblEmployee.Text = dts.Rows(0)("emp_name") & " " & dts.Rows(0)("emp_lastname")
+        name_emp()
         lblSaleDate.Text = Date.Now
         lblSaleID.Text = getNewBill()
         gbDetail.Enabled = True
         btn_save.Enabled = True
-
-
-
-
+        btnPrint.Enabled = True
         btnSale.Enabled = False
     End Sub
 
     Private Sub txtProID_TextChanged(sender As Object, e As EventArgs) Handles txtProID.TextChanged
-        lblProName.Text = ""
-        lblProPrice.Text = ""
-        txtSaleAmount.Text = ""
-        lblSaleTotal.Text = ""
+        '  lblProName.Text = ""
+        ' lblProPrice.Text = ""
+        'txtSaleAmount.Text = ""
+        'lblSaleTotal.Text = ""
 
     End Sub
 
@@ -105,6 +101,21 @@ Public Class sale
             lblProPrice.Text = myDR.Item("pro_price")
             txtSaleAmount.Text = "1"
             txtSaleAmount.Focus()
+            myDR.Close()
+
+            connect_open()
+
+            strSQL = "select pro_id from product where pro_id = @pidd"
+            myComm = New SqlCommand(strSQL, cn)
+            myComm.Parameters.Clear()
+            myComm.Parameters.AddWithValue("pidd", txtProID.Text)
+            myDR = myComm.ExecuteReader
+            If myDR.HasRows Then
+                myDR.Read()
+                txtProID.Clear()
+                txtProID.Text = myDR.Item("pro_id")
+            End If
+
         Else
             MessageBox.Show("ไม่พบสินค้าตามรหัสที่ท่านระบุ", "Data not found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             txtProID.SelectAll()
@@ -114,6 +125,15 @@ Public Class sale
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+
+        If txtProID.Text = "" Then
+            MessageBox.Show("กรุณาเลือกสินค้า", "คำเตือน", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtProID.Select()
+            Exit Sub
+        End If
+
+
+
         Dim found As Boolean = False
         Dim total As Double
         For i = 0 To dgvSale.RowCount - 1
@@ -150,7 +170,6 @@ Public Class sale
         For i = 0 To dgvSale.RowCount - 1
             total = total + Val(dgvSale.Item(4, i).Value)
         Next
-
         net = total
         lblTotal.Text = FormatNumber(total, 2)
         lblNet.Text = FormatNumber(net, 2)
@@ -170,6 +189,7 @@ Public Class sale
     End Sub
 
     Private Sub txtProID_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtProID.KeyPress
+
         If Asc(e.KeyChar) = 13 Then
             txtProID.Text = txtProID.Text.Trim
             If txtProID.Text.Length = 0 Then
@@ -177,6 +197,7 @@ Public Class sale
             End If
             Call findProduct()
         End If
+
     End Sub
 
     Private Sub txtSaleAmount_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSaleAmount.KeyPress
@@ -206,12 +227,13 @@ Public Class sale
 
         For i = 0 To dgvSale.RowCount - 1
             'บันทึกรายการขาย
-            strSQL = "Insert into SaleDetail(sale_id,pro_id,amount,proprice) " &
-           " Values(@sid, @pid, @samount, @pprice)"
+            strSQL = "Insert into SaleDetail1(sale_id,pro_id,pro_name,amount,pro_price) " &
+           " Values(@sid, @pid,@pname, @samount, @pprice)"
             myComm.CommandText = strSQL
             myComm.Parameters.Clear()
             myComm.Parameters.AddWithValue("sid", lblSaleID.Text)
             myComm.Parameters.AddWithValue("pid", dgvSale.Item(0, i).Value)
+            myComm.Parameters.AddWithValue("pname", dgvSale.Item(1, i).Value)
             myComm.Parameters.AddWithValue("samount", dgvSale.Item(3, i).Value)
             myComm.Parameters.AddWithValue("pprice", dgvSale.Item(2, i).Value)
             myComm.ExecuteNonQuery()
@@ -256,5 +278,16 @@ Public Class sale
             main.Show()
             Me.Hide()
         End If
+    End Sub
+    Private Sub name_emp()
+        With main
+            Dim name As String
+            name = .lbl_name.Text
+            lblEmployee.Text = name
+        End With
+    End Sub
+
+    Private Sub dgvSale_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvSale.CellContentClick
+
     End Sub
 End Class

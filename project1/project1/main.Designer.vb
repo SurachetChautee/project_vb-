@@ -39,6 +39,7 @@ Partial Class main
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
@@ -62,10 +63,10 @@ Partial Class main
         Me.ToolStrip1.BackColor = System.Drawing.Color.DarkOrange
         Me.ToolStrip1.Font = New System.Drawing.Font("FC Active", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5, Me.ToolStripButton3, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton7, Me.ToolStripButton6, Me.ToolStripButton4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5, Me.ToolStripButton3, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton7, Me.ToolStripButton8, Me.ToolStripButton6, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1383, 103)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1428, 103)
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -75,7 +76,7 @@ Partial Class main
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel2, Me.lbl_id, Me.ToolStripStatusLabel1, Me.lblusername, Me.ToolStripStatusLabel5, Me.lbl_name, Me.ToolStripStatusLabel7, Me.lbl_time})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 595)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1383, 33)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1428, 33)
         Me.StatusStrip1.TabIndex = 4
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -220,6 +221,20 @@ Partial Class main
         Me.ToolStripButton7.Text = "รายละเอียดการขาย"
         Me.ToolStripButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripButton8
+        '
+        Me.ToolStripButton8.AutoSize = False
+        Me.ToolStripButton8.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ToolStripButton8.Image = Global.project1.My.Resources.Resources.receive
+        Me.ToolStripButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton8.Name = "ToolStripButton8"
+        Me.ToolStripButton8.RightToLeftAutoMirrorImage = True
+        Me.ToolStripButton8.Size = New System.Drawing.Size(145, 100)
+        Me.ToolStripButton8.Text = "รับสินค้า"
+        Me.ToolStripButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'ToolStripButton6
         '
         Me.ToolStripButton6.AutoSize = False
@@ -253,7 +268,7 @@ Partial Class main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Info
-        Me.ClientSize = New System.Drawing.Size(1383, 628)
+        Me.ClientSize = New System.Drawing.Size(1428, 628)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
@@ -289,4 +304,5 @@ Partial Class main
     Friend WithEvents ToolStripButton2 As ToolStripButton
     Friend WithEvents ToolStripButton7 As ToolStripButton
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ToolStripButton8 As ToolStripButton
 End Class

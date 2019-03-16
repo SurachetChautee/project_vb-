@@ -32,3 +32,5 @@ D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\D
 D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.brand.resources
 D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.sale.resources
 D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.frmProductList.resources
+D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.SaleDetail.resources
+D:\project จริงๆแล้วนะ\project_vb-\project1\project1\obj\Debug\project1.Receive_product.resources

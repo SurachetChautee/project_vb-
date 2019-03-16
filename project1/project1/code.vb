@@ -43,8 +43,6 @@ Module code
         da.Fill(ds, "table")
         Return ds.Tables("table")
 
-
-
     End Function
 
 

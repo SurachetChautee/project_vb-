@@ -7,7 +7,7 @@ Public Class brand
         If (mbr = MsgBoxResult.Ok) Then
 
             main.Show()
-            Me.Hide()
+            Me.Close()
 
         End If
 

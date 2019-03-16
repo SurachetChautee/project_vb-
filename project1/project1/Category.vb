@@ -103,7 +103,7 @@ Public Class Category
         mbr = MessageBox.Show("ต้องการกลับสู่หน้าหลักหรือไม่ ?", "คำเตือน", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
         If (mbr = MsgBoxResult.Ok) Then
             main.Show()
-            Me.Hide()
+            Me.Close()
         End If
 
     End Sub
