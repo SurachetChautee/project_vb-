@@ -54,7 +54,7 @@ Partial Class frmProductList
         Me.dgvProduct.AllowUserToDeleteRows = False
         Me.dgvProduct.AllowUserToResizeColumns = False
         Me.dgvProduct.AllowUserToResizeRows = False
-        Me.dgvProduct.BackgroundColor = System.Drawing.Color.SandyBrown
+        Me.dgvProduct.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvProduct.Location = New System.Drawing.Point(30, 36)
         Me.dgvProduct.Margin = New System.Windows.Forms.Padding(4)
@@ -70,7 +70,7 @@ Partial Class frmProductList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkOrange
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(459, 536)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnSelect)

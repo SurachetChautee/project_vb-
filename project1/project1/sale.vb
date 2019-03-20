@@ -16,7 +16,7 @@ Public Class sale
 
         Dim curYear As Integer = Format(Date.Now, "yyyy") + 543
         connect_open()
-        strSQL = "Select Max(sale_id) as maxSale from sale Where sale_id Like 'S" & curYear & "%' "
+        strSQL = "Select Max(sale_id) as maxSale from sale1 Where sale_id Like 'S" & curYear & "%' "
         myComm = New SqlCommand(strSQL, cn)
         myComm.CommandTimeout = 15
         myComm.CommandType = CommandType.Text
@@ -47,6 +47,7 @@ Public Class sale
 
     Private Sub sale_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btn_save.Enabled = False
+        btnPrint.Enabled = False
     End Sub
 
     Private Sub btnSale_Click(sender As Object, e As EventArgs) Handles btnSale.Click
@@ -55,8 +56,8 @@ Public Class sale
         lblSaleID.Text = getNewBill()
         gbDetail.Enabled = True
         btn_save.Enabled = True
-        btnPrint.Enabled = True
         btnSale.Enabled = False
+        btnPrint.Enabled = False
     End Sub
 
     Private Sub txtProID_TextChanged(sender As Object, e As EventArgs) Handles txtProID.TextChanged
@@ -214,7 +215,7 @@ Public Class sale
 
         connect_open()
         'บันทึกหัวใบเสร็จ
-        strSQL = "Insert into Sale(sale_id,sale_date,emp_id) " &
+        strSQL = "Insert into Sale1(sale_id,sale_date,emp_id) " &
                 " Values(@sid, @sdate, @e_id)"
         myComm = New SqlCommand(strSQL, cn)
         myComm.CommandTimeout = 15
@@ -253,6 +254,7 @@ Public Class sale
         lblNet.Text = ""
         cn.Close()
         btn_save.Enabled = False
+        btnPrint.Enabled = True
         btnSale.Enabled = True
 
     End Sub
@@ -288,6 +290,11 @@ Public Class sale
     End Sub
 
     Private Sub dgvSale_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvSale.CellContentClick
+
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        bill.Show()
 
     End Sub
 End Class

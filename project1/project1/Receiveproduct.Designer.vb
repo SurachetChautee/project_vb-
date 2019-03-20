@@ -22,7 +22,9 @@ Partial Class Receive_product
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnPrint = New System.Windows.Forms.Button()
         Me.btn_save = New System.Windows.Forms.Button()
         Me.btnSale = New System.Windows.Forms.Button()
         Me.gbHead = New System.Windows.Forms.GroupBox()
@@ -58,23 +60,43 @@ Partial Class Receive_product
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox1.SuspendLayout()
         Me.gbHead.SuspendLayout()
         Me.gbDetail.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvSale, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.GroupBox1.Controls.Add(Me.btnPrint)
         Me.GroupBox1.Controls.Add(Me.btn_save)
         Me.GroupBox1.Controls.Add(Me.btnSale)
-        Me.GroupBox1.Location = New System.Drawing.Point(1169, 90)
+        Me.GroupBox1.Location = New System.Drawing.Point(1169, 138)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(575, 186)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
+        '
+        'btnPrint
+        '
+        Me.btnPrint.BackColor = System.Drawing.Color.White
+        Me.btnPrint.Enabled = False
+        Me.btnPrint.Font = New System.Drawing.Font("FC Active", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btnPrint.Image = Global.project1.My.Resources.Resources.printer
+        Me.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPrint.Location = New System.Drawing.Point(22, 105)
+        Me.btnPrint.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(256, 46)
+        Me.btnPrint.TabIndex = 9
+        Me.btnPrint.Text = "พิมพ์ใบเสร็จรับเงิน"
+        Me.btnPrint.UseVisualStyleBackColor = False
         '
         'btn_save
         '
@@ -115,7 +137,7 @@ Partial Class Receive_product
         Me.gbHead.Controls.Add(Me.Label1)
         Me.gbHead.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.gbHead.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.gbHead.Location = New System.Drawing.Point(160, 90)
+        Me.gbHead.Location = New System.Drawing.Point(160, 138)
         Me.gbHead.Margin = New System.Windows.Forms.Padding(4)
         Me.gbHead.Name = "gbHead"
         Me.gbHead.Padding = New System.Windows.Forms.Padding(4)
@@ -126,6 +148,7 @@ Partial Class Receive_product
         '
         'txt_saleid
         '
+        Me.txt_saleid.Enabled = False
         Me.txt_saleid.Location = New System.Drawing.Point(193, 44)
         Me.txt_saleid.Multiline = True
         Me.txt_saleid.Name = "txt_saleid"
@@ -213,7 +236,7 @@ Partial Class Receive_product
         Me.gbDetail.Enabled = False
         Me.gbDetail.Font = New System.Drawing.Font("FC Active", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.gbDetail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.gbDetail.Location = New System.Drawing.Point(160, 293)
+        Me.gbDetail.Location = New System.Drawing.Point(160, 341)
         Me.gbDetail.Margin = New System.Windows.Forms.Padding(4)
         Me.gbDetail.Name = "gbDetail"
         Me.gbDetail.Padding = New System.Windows.Forms.Padding(4)
@@ -503,11 +526,37 @@ Partial Class Receive_product
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "รหัสสินค้า"
         '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(1813, 103)
+        Me.ToolStrip1.TabIndex = 8
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.AutoSize = False
+        Me.ToolStripButton4.Font = New System.Drawing.Font("FC Active", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ToolStripButton4.Image = Global.project1.My.Resources.Resources._2
+        Me.ToolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.RightToLeftAutoMirrorImage = True
+        Me.ToolStripButton4.Size = New System.Drawing.Size(145, 100)
+        Me.ToolStripButton4.Text = "กลับสู่หน้าหลัก"
+        Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'Receive_product
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1813, 913)
+        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.gbDetail)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.gbHead)
@@ -521,7 +570,10 @@ Partial Class Receive_product
         Me.gbDetail.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.dgvSale, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -565,4 +617,8 @@ Partial Class Receive_product
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents btnFind As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripButton4 As ToolStripButton
+    Friend WithEvents btnPrint As Button
 End Class

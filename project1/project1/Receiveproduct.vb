@@ -10,6 +10,7 @@ Public Class Receive_product
         name_emp()
         gbDetail.Enabled = True
         btn_save.Enabled = True
+        btnPrint.Enabled = False
         txt_saleid.Enabled = True
         btnSale.Enabled = False
     End Sub
@@ -23,6 +24,8 @@ Public Class Receive_product
 
     Private Sub Receive_product_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btn_save.Enabled = False
+        txt_saleid.Enabled = False
+        btnPrint.Enabled = False
         txt_saleid.Enabled = False
 
     End Sub
@@ -99,8 +102,20 @@ Public Class Receive_product
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
         connect_open()
+        sql = "select * from Receive_product1 where rc_id ='" & txt_saleid.Text & "' "
+        da = New SqlDataAdapter(sql, cn)
+        ds = New DataSet
+        da.Fill(ds, "table")
+        Dim dts As DataTable = ds.Tables("table")
+        If dts.Rows.Count > 0 Then
+            MsgBox("หมายเลขใบเสร็จซ้ำ กรุณากรอกหมายเลขใบเสร็จใหม่")
+            txt_saleid.Clear()
+            txt_saleid.Focus()
+            Return
+        End If
+
         'บันทึกหัวใบเสร็จ
-        strSQL = "Insert into Receive_product(sale_id,sale_date,emp_id) " &
+        strSQL = "Insert into Receive_product1(rc_id,sale_date,emp_id) " &
                 " Values(@sid, @sdate, @e_id)"
         myComm = New SqlCommand(strSQL, cn)
         myComm.CommandTimeout = 15
@@ -112,7 +127,7 @@ Public Class Receive_product
 
         For i = 0 To dgvSale.RowCount - 1
             'บันทึกรายการขาย
-            strSQL = "Insert into Product_receipt_detail(sale_id,pro_id,pro_name,amount,pro_price) " &
+            strSQL = "Insert into Product_receipt_detail1(rc_id,pro_id,pro_name,amount,pro_price) " &
            " Values(@sid, @pid,@pname, @samount, @pprice)"
             myComm.CommandText = strSQL
             myComm.Parameters.Clear()
@@ -140,6 +155,8 @@ Public Class Receive_product
         cn.Close()
         btn_save.Enabled = False
         btnSale.Enabled = True
+        btnPrint.Enabled = True
+        txt_saleid.Enabled = False
 
     End Sub
 
@@ -205,5 +222,15 @@ Public Class Receive_product
             Call findProduct()
 
         End If
+    End Sub
+
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+        main.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        rc.Show()
     End Sub
 End Class
